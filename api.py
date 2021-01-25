@@ -2,7 +2,7 @@
 import json, time
 from flask import Flask, Response, jsonify, render_template, request
 import gevent
-from gevent.wsgi import WSGIServer
+from gevent.pywsgi import WSGIServer
 from gevent.queue import Queue
 
 app = Flask(__name__)
